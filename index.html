@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Zecrets</title>
+		<meta charset="UTF-8">
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+		<link rel="stylesheet" href="zecrets.css">
+	</head>
+	<body>
+		<table id="app">
+			<!-- Note to self; because keys need scrolling, I needed a fixed table layout, because of the fixed table layout,
+			my columns ignored their styled width, because I need a styled width, I googled and learned that the fixed table
+			layout only cares about the width of the `col` elements, so I added `col` elements and styled their width. -->
+			<colgroup>
+	        <col class="colLeft">
+	        <col class="colRight">
+	    </colgroup>
+			<tr id="titleRow">
+				<td id="banner" colspan="2">Zecrets Manager</td>
+			</tr>
+			<tr id="row1">
+				<td class="half" id="keys">Encryption keys</td>
+				<td id="zecretCell" rowspan="2"><textarea id="zecret"></textarea></td>
+			</tr>
+			<tr id="row2">
+				<td class="half">Files</td>
+			</tr>
+		</table>
+
+	</body>
+
+	<script type="text/javascript" src="base.js"></script>
+	<script type="text/javascript" src="storage.js"></script>
+	<script type="text/javascript" src="mold.js"></script>
+	<script type="text/javascript" src="ui.js"></script>
+	<script type="text/javascript" src="electrician.js"></script>
+	<script type="text/javascript" src="keys.js"></script>
+	<script type="text/javascript" src="gpg-api.js"></script>
+	<script type="text/javascript" src="controller.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+	<script>
+	//It is interesting that NW allows inline scripting, it does keep things simple
+	//For reference: http://docs.nwjs.io/en/latest/
+
+	</script>
+</html>

@@ -1,0 +1,2 @@
+All JavaScript and HTML -> Copyright by Tom J Demuyt, licensed via GPL 2.0
+decrypt.png, encrypt.png, keyring.png, sign.png -> Copyright by https://gnupg.org/related_software/gpa/icons.html

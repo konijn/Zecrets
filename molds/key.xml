@@ -1,0 +1,11 @@
+<b>Key Overview</b><br><br>
+<label for="purpose">Purpose: </label><span id="purpose" name="purpose">${purpose}</span><br>
+<label for="user">User: </label><span id="user" name="user">${email}</span><br>
+<label for="id">ID: </label><span id="id" name="id">${id}</span><br>
+<label for="date">Created On: </label><span id="date" name="date">${date}</span><br>
+<label for="date">Passphrase: </label><span id="date" name="date">${custom}</span><br>
+<br>
+<button type="button" id="deleteKey" class="btn btn-danger">Delete</button>&emsp;
+<button type="button" id="activateKey" class="btn btn-primary">Activate</button>&emsp;
+<button type="button" id="exportKey" class="btn btn-primary">Export</button><br>
+<input type="file" id="fileDialog" class="hidden" nwdirectory>

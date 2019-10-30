@@ -1,0 +1,23 @@
+#To create a new key; gpg --batch --generate-key foo
+#To list the keys in your public key ring; gpg --list-keys
+#To list the keys in your secret key ring; gpg --list-secret-keys
+#To list keys that have a secret and public version; gpg --list-secret-keys --keyid-format LONG
+#To encrypt a file; gpg --encrypt -r "Zecrets User" test.txt
+#To decrypt a file; gpg --batch --yes --passphrase="Z3cr3ts" --pinentry-mode loopback --output out.txt --decrypt test.txt.gpg
+#To delete a secret key by number: gpg --batch --yes --delete-secret-key 9E10545ADEDF01DF4D36818D71BD27ACA5DB93CD
+#To delete a public key by number: gpg --batch --yes --delete-key 9E10545ADEDF01DF4D36818D71BD27ACA5DB93CD
+#There is no need export a public key if you are exporting the private key
+#To export a public key by number: gpg --output mygpgkey_pub.gpg --armor --export 1C06A99628EE42428941A84F626A32EB2AB41BB7
+#To export a private key by number: gpg --batch --yes --passphrase="Z3cr3ts" --pinentry-mode loopback --output mygpgkey_sec.gpg --armor --export-secret-key 1C06A99628EE42428941A84F626A32EB2AB41BB7
+#To export a private key by number: gpg --output mygpgkey_sec.gpg --armor --export-secret-key 1C06A99628EE42428941A84F626A32EB2AB41BB7
+#Clear passphrases; gpg-connect-agent reloadagent /bye
+%echo Generating an encryption key for Zecrets
+Key-Type: default
+Subkey-Type: default
+Name-Real: Blueprint
+Name-Comment: [Zecrets]
+Name-Email: zecrets@taryss.fr
+Expire-Date: 0
+Passphrase: Z3cr3ts
+%commit
+%echo done

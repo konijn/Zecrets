@@ -1,0 +1,14 @@
+<b>Create New Key</b><br>
+<br>
+<label for="purpose">Purpose:</label> <input id="purpose" name="purpose" value="${purpose}"><br>
+<label for="user">User (email):</label> <input id="user" name="user" value="${user}"><br>
+<label for="passphrase">Passphrase:</label> <input id="passphrase" name="passphrase" value="${passphrase}"><br>
+<br>
+<button type="button" id="createKey" class="btn btn-success">Create</button> 
+<button type="button" id="cancelKeyCreation" class="btn btn-primary">Cancel</button> <br>
+<br>
+<small>
+  User: if you will not share your documents, there is no need to change the username<br>
+  Purpose: keys are identified by their purpose<br>
+  Passphrase: using the default passphrase is less secure, but convenient<br>
+</small>
