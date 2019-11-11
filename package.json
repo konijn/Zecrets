@@ -1,4 +1,7 @@
 {
   "name": "Zecrets",
-  "main": "index.html"
+  "main": "index.html",
+  "devDependencies": {
+    "nwjs-builder-phoenix": "^1.15.0"
+  }
 }
